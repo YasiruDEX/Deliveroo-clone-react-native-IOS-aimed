@@ -1,0 +1,32 @@
+export default {
+    name: "featured",
+    type: "document", // Assuming it's a document type
+    title: "Featured Menu categories",
+    fields: [
+      {
+        name: "name",
+        type: "string",
+        title: "Featured Category name",
+        validation: (Rule) => Rule.required(),
+      },
+      {
+        name: "short_description",
+        type: "string",
+        title: "Short description",
+        validation: (Rule) => Rule.max(200),
+      },
+      {
+        name: "restaurants",
+        type: "array",
+        title: "Restaurants",
+        of: [
+          {
+            type: "reference",
+            to: [{ type: "restaurant" }], // Assuming 'restaurant' is another document type
+          },
+        ],
+      },
+      // Add other fields for your 'featured' document...
+    ],
+  };
+  
