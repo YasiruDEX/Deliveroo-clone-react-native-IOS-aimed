@@ -19,7 +19,7 @@ const RestaurentCard = ({
 }) => {
 
   const navigation = useNavigation();
-  // console.log(imgUrl);
+  // console.log(shortDescription);
 
   return (
     <TouchableOpacity 
