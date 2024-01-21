@@ -38,6 +38,7 @@ React Native iOS app clone of Deliveroo with enhanced features for seamless food
       <source src="Video_samples/Video.mp4" type="video/mp4">
       Your browser does not support the video tag.
   </video>
+  Video_samples/Video.mp4
 
   <h2>Contributing:</h2>
   <p>Contributions are welcome! Please fork the repository and create a pull request with your changes.</p>
